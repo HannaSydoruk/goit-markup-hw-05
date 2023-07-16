@@ -680,7 +680,6 @@ a.currnet-color {
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   border-radius: 4px;
   background: var(--iris);
   color: var(--white);
@@ -710,6 +709,7 @@ a.currnet-color {
 
 .send {
   fill: var(--white);
+  margin-left: 16px;
 }
 
 .modal {
