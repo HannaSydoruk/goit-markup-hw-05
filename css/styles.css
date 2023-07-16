@@ -643,11 +643,13 @@ a.currnet-color {
 
 .footer-form {
   margin-left: 80px;
+  /* display: flex;
+  flex-direction: row; */
 }
 
-.subscribe {
+.subscribe-form {
   display: flex;
-  flex-direction: row;
+  gap: 24px;
 }
 
 .subscribe-input {
@@ -659,13 +661,13 @@ a.currnet-color {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: var(--white);
   padding-left: 16px;
-  background-color: inherit;
+  background-color: transparent;
   font-family: inherit;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-input::placeholder {
@@ -673,7 +675,7 @@ a.currnet-color {
 }
 
 .subscribe-btn {
-  display: inline-flex;
+  display: flex;
   margin-left: 24px;
   padding: 8px 24px;
   justify-content: center;
@@ -682,12 +684,15 @@ a.currnet-color {
   border-radius: 4px;
   background: var(--iris);
   color: var(--white);
+  cursor: pointer;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
+  min-width: 165px;
+  height: 40px;
 }
 
 .subscribe-btn:hover,
