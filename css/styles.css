@@ -794,7 +794,7 @@ a.currnet-color {
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
 }
 
 .modal-form-title {
