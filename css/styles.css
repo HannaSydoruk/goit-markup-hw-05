@@ -810,14 +810,11 @@ a.currnet-color {
 
 .modal-input {
   margin-bottom: 8px;
+  position: relative;
 }
 
 .modal-input-comment {
   margin-bottom: 16px;
-}
-
-.modal-input {
-  position: relative;
 }
 
 .modal-contacts {
@@ -842,7 +839,7 @@ a.currnet-color {
   transition: border 250ms cubic-bezier(0.4 0 0.2 1);
 }
 
-.modal-contacts:focus + svg {
+.modal-contacts:focus + svg.input-icon {
   fill: var(--iris);
   transition: fill 250ms cubic-bezier(0.4 0 0.2 1);
 }
@@ -876,6 +873,7 @@ a.currnet-color {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .privacy-accept {
