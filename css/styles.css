@@ -692,13 +692,14 @@ a.currnet-color {
   border: none;
   min-width: 165px;
   height: 40px;
+  outline: none;
 }
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
   color: var(--white);
   background-color: var(--ocean);
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   transition: color 250ms cubic-bezier(0.4 0 0.2 1),
@@ -823,7 +824,6 @@ a.currnet-color {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   background-color: transparent;
-  margin-top: 4px;
   padding-left: 38px;
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -849,7 +849,6 @@ a.currnet-color {
   border-radius: 4px;
   background-color: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-top: 4px;
   color: rgba(46, 47, 66, 0.4);
   outline: transparent;
   width: 100%;
@@ -910,8 +909,8 @@ a.policy {
   fill: transparent;
 }
 
-.checkbox-policy input:checked + label.privacy-accept > span.check-icon {
-  border-color: var(--ocean);
+input:checked + label.privacy-accept > span.check-icon {
+  background-color: var(--ocean);
   border: none;
   fill: var(--cloud);
 }
